@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "CLI Tool",
+    "owner_name": "Alex",
+    "description": "My project",
+    "due_date": "2025-12-31",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Build the CLI",
+        "assigned_to": "",
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "title": "Write tests",
+        "assigned_to": "",
+        "status": "pending"
+      }
+    ]
+  }
+]

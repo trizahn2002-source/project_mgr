@@ -21,7 +21,7 @@ class Project:
             "id":  self._id,
             "title": self._title,
             "owner_name": self._owner_name,
-            "description":nself._description,
+            "description":self._description,
             "due_date": self._due_date,
             "tasks": [t.to_dict() for t in self._tasks]
         }

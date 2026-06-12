@@ -15,3 +15,14 @@ def load_users():
         return []
     with open(USERS_FILE, "r") as f:
         return json.load(f)
+
+def save_projects(projects):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(PROJECTS_FILE, "w") as f:
+        json.dump([p.to_dict() for p in projects], f, indent=2)
+
+def load_projects():
+    if not os.path.exists(PROJECTS_FILE):
+        return []
+    with open(PROJECTS_FILE, "r") as f:
+        return json.load(f)
