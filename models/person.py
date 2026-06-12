@@ -5,4 +5,4 @@ class Person:
         self._email = email
 
     def __str__(self):
-        return f"{self.-name} <{self._email>}"
+        return f"{self._name} - {self._email}"
