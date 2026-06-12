@@ -9,5 +9,12 @@ class User(Person):
         User._id_counter += 1
         self._projects = []
 
+    def to_dict(self):
+        return {
+            "id": self._id,
+            "name": self._name,
+            "email": self._email
+        }
+
     def __str__(self):
         return f"[user #{self._id}] {self._name} - {self._email}"
